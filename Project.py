@@ -15,7 +15,7 @@ from tempfile import TemporaryDirectory
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from tensorflow import keras
-from tensorflow.keras.preprocessing.image import ImageDataGenerator
+from keras_preprocessing.image import ImageDataGenerator
 
 
 cudnn.benchmark = True 
@@ -58,8 +58,8 @@ def loadingImages(data_dir):
 #=-=-=-=-=-=-=#=-=-=-=-=-=-=#=-=-=-=-=-=-=#=-=-=-=-=-=-=#=-=-=-=-=-=-=#=-=-=-=-=-=-=#=-=-=-=-=-=-=#=-=-=-=-=-=-=
 #=-=-=-=-=-=-=#=-=-=-=-=-=-=#=-=-=-=-=-=-=#=-=-=-=-=-=-=#=-=-=-=-=-=-=#=-=-=-=-=-=-=#=-=-=-=-=-=-=#=-=-=-=-=-=-=
 # change file directory, will update to use os to scan through all of computer
-train_data_dir = '/Users/jaimeperez/Spring 2024/Machine Learning/Project-MRI/MachineLearning_MRI/TestingImages/Training'
-test_data_dir = '/Users/jaimeperez/Spring 2024/Machine Learning/Project-MRI/MachineLearning_MRI/TestingImages'
+train_data_dir = '/Users/oorti/OneDrive/Desktop/MachineLearningProject/MachineLearningHistology/TestingImages/Training'
+test_data_dir = '/Users/oorti/OneDrive/Desktop/MachineLearningProject/MachineLearningHistology/TestingImages/Testing'
 train_df = loadingImages(train_data_dir)
 test_df = loadingImages(test_data_dir)
 #=-=-=-=-=-=-=#=-=-=-=-=-=-=#=-=-=-=-=-=-=#=-=-=-=-=-=-=#=-=-=-=-=-=-=#=-=-=-=-=-=-=#=-=-=-=-=-=-=#=-=-=-=-=-=-=
